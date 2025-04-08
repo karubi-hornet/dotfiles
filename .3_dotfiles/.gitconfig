@@ -1,0 +1,26 @@
+[core]
+	# Location of gitignore
+	excludesfile = ~/.gitignore
+	# Disable automatically convert line feed codes
+	autocrlf = false
+	# File names are case sensitive
+	ignorecase = false 
+	# Disable encode Japanese file names
+	quotepath = false
+
+[color]
+	# Color
+	ui = true
+
+[push]
+	default = current
+
+[pull]
+	ff = only
+	rebase = false
+
+[user]
+	name = ryo
+	email = gyukarubi69@gmail.com
+[init]
+	defaultBranch = main
