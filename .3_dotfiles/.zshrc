@@ -16,9 +16,8 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 ### ALIACES
-alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+alias deldsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias ll="ls -la"
-alias emulator="/Users/ryo/Library/Android/sdk/emulator/emulator"
 
 ### for git
 autoload -U colors; colors
@@ -60,6 +59,4 @@ setopt prompt_subst
 # yarn
 # export PATH="$PATH:`yarn global bin`"
 
-. $(brew --prefix asdf)/libexec/asdf.sh
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-PATH=/Users/ryo/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/Users/ryo/.local/share/zinit/polaris/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::/Users/ryo/.asdf/installs/nodejs/19.0.0/.npm/bin:::/usr/local/bin
