@@ -1,27 +1,23 @@
 Dotfiles for Mac
 ====
 
-Thanks https://github.com/takameron/dotfiles-mac
-
 ## 実行されること
-* homebrewを用いたパッケージのインストール
-* asdfを用いたCLIツールのインストール
+* homebrew, masを用いたパッケージのインストール
 * macOSの設定
 * Git・Vim・VS Code・Zshの設定
 
 ## 動作確認環境
 * macOS Monterey 12.3
 
-## 事前準備
+## 使い方
 1. このリポジトリをclone
 
-## 使い方
-1. `dotfiles-mac`ディレクトリに移動
+2. `dotfiles-mac`ディレクトリに移動
     ```
     cd dotfiles-mac
     ```
 
-2. ディレクトリ直下で`make`を実行すると、、セットアップが実行される。
+3. ディレクトリ直下で`make`を実行すると、、セットアップが実行される。
     ```
     make
     ```
