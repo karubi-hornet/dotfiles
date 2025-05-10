@@ -85,21 +85,8 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 defaults write com.apple.dock showDesktopGestureEnabled -bool true
 defaults write com.apple.dock showLaunchpadGestureEnabled -bool true
 
-# --- Safari ---
-# Show full URL in address bar
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-# Disable automatic file opening after download
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-# Show "Develop" in the menu bar
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-# Enable the debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-# Show status bar
-defaults write com.apple.Safari ShowStatusBar -bool true
-killall Safari
-
 # ---　TextEdit　---
 # Rich text to plain text
 defaults write com.apple.TextEdit RichText -int 0
 
-echo "👍 MacOS setting is done!"
+echo "\033[0;32mMacOS setting is done!\033[0m"

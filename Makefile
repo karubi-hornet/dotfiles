@@ -1,5 +1,5 @@
 # Do everything.
-all: init homebrew macos dotfiles vscode 
+all: init homebrew macos dotfiles vscode asdf
 
 # Set initial preference.
 init:
@@ -20,3 +20,7 @@ dotfiles:
 # VSCode Settings.
 vscode:
 	.4_vscode/install.sh
+
+# asdf Settings.
+asdf:
+	.5_asdf/install.sh
