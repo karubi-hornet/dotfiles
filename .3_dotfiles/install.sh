@@ -11,5 +11,4 @@ if [ ! $? ]; then
 	echo ". $PWD/.4_dotfiles/.plugins.zsh" >> ~/.zshrc
 fi
 
-
-echo "dotfiles link is done!"
+echo "\033[0;32mdotfiles link is done!\033[0m"

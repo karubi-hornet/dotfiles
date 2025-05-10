@@ -14,4 +14,4 @@ cd "$PWD"/.1_homebrew || exit
 brew bundle
 cd - || exit
 
-echo "Homebrew setting is done!"
+echo "\033[0;32mHomebrew setting is done!\033[0m"

@@ -80,4 +80,4 @@ for i in "${pkglist[@]}"; do
   code --install-extension "$i"
 done
 
-echo "VSCode setting is done!"
+echo "\033[0;32mVSCode setting is done!\033[0m"
