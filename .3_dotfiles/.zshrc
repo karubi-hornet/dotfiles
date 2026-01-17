@@ -56,7 +56,9 @@ function git-prompt {
 PROMPT='`git-prompt`%{$fg_bold[cyan]%}[%~]%{$reset_color%}'
 setopt prompt_subst
 
-# yarn
-# export PATH="$PATH:`yarn global bin`"
+plugins=(
+  git
+  you-should-use
+)
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
