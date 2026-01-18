@@ -89,4 +89,4 @@ defaults write com.apple.dock showLaunchpadGestureEnabled -bool true
 # Rich text to plain text
 defaults write com.apple.TextEdit RichText -int 0
 
-echo "\033[0;32mMacOS setting is done!\033[0m"
+printf "\033[0;32mMacOS setting is done!\033[0m\n"
