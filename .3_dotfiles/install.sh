@@ -7,8 +7,8 @@ basename -a "$PWD"/.4_dotfiles/.??* | xargs -I{} ln -sfv "$PWD"/.4_dotfiles/{} ~
 grep .plugins.zsh ~/.zshrc > /dev/null
 if [ ! $? ]; then
 	sh -c "$(curl -fsSL https://git.io/zinit-install)"
-	cp -f $PWD/.4_dotfiles/.zshrc ~/.zshrc
-	echo ". $PWD/.4_dotfiles/.plugins.zsh" >> ~/.zshrc
+	cp -f "$PWD"/.4_dotfiles/.zshrc ~/.zshrc
+	printf ". %s/.4_dotfiles/.plugins.zsh\n" "$PWD" >> ~/.zshrc
 fi
 
-echo "\033[0;32mdotfiles link is done!\033[0m"
+printf "\033[0;32mdotfiles link is done!\033[0m\n"
